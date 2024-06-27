@@ -86,7 +86,6 @@
   align-self: center;
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
-  text-decoration: none;
 }
 .home-nav2:hover {
   color: #3d6e70ff;

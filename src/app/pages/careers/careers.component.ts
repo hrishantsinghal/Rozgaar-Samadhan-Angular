@@ -2,18 +2,17 @@ import { Component } from '@angular/core'
 import { Title, Meta } from '@angular/platform-browser'
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css'],
+  selector: 'app-careers',
+  templateUrl: 'careers.component.html',
+  styleUrls: ['careers.component.css'],
 })
-export class Home {
-  rawn7tk: string = ' '
+export class Careers {
   constructor(private title: Title, private meta: Meta) {
-    this.title.setTitle('Home - Rozgaar Samadhan ')
+    this.title.setTitle('Careers - Rozgaar Samadhan')
     this.meta.addTags([
       {
         property: 'og:title',
-        content: 'Home - Rozgaar Samadhan ',
+        content: 'Careers - Rozgaar Samadhan',
       },
     ])
   }

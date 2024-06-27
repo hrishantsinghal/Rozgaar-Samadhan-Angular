@@ -7,16 +7,26 @@ import { AppComponent } from './app.component'
 
 const routes = [
   {
-    path: '**',
+    path: 'home',
     loadChildren: () =>
-      import('./pages/apply-to-job/apply-to-job.module').then(
-        (m) => m.ApplyToJobModule
-      ),
+      import('./pages/home/home.module').then((m) => m.HomeModule),
+  },
+  {
+    path: 'apply',
+    loadChildren: () =>
+      import('./pages/careers1/careers1.module').then((m) => m.Careers1Module),
   },
   {
     path: '',
     loadChildren: () =>
-      import('./pages/home/home.module').then((m) => m.HomeModule),
+      import('./pages/careers/careers.module').then((m) => m.CareersModule),
+  },
+  {
+    path: '**',
+    loadChildren: () =>
+      import('./pages/not-found/not-found.module').then(
+        (m) => m.NotFoundModule
+      ),
   },
 ]
 
